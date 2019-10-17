@@ -9,8 +9,7 @@ $(document).ready(function() {
         
         if (value === '=') {
             if (op === '+') {
-                var answer = $('#answer').html(Number(num1) + Number(num2))
-                num1 = answer
+                $('#answer').html(Number(num1) + Number(num2))
             } else if (op === '-') {
                 $('#answer').html(Number(num1) - Number(num2))
             } else if (op === '*') {
