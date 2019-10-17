@@ -1,0 +1,104 @@
+html {box-sizing: border-box;}
+
+*, *::before, *::after {
+    box-sizing:inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#answer {
+    grid-area: answer;
+}
+
+#clear {
+    grid-area: clear;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#calculator {
+    display: grid;
+    width: 500px;
+    height: 625px;;
+    background: rgb(67, 172, 67);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "clear answer answer answer"
+        "seven eight nine divide"
+        "four five six multiply"
+        "one two three minus"
+        "zero decimal equal plus"
+    ;
+}
+
+button {
+    background: rgb(67, 172, 67);
+}
+
+#ans {
+    height: 20px;
+    width: 40px;
+}
